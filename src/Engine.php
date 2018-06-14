@@ -4,7 +4,7 @@ namespace JanDrda\LaravelGoogleCustomSearchEngine;
 
 use Exception;
 
-class LaravelGoogleCustomSearchEngine
+class Engine
 {
 
     /**
@@ -35,10 +35,10 @@ class LaravelGoogleCustomSearchEngine
      * @param $engineId
      * @param $apiKey
      */
-    public function __construct()
+    public function __construct($engineId, $apiKey)
     {
-        $this->engineId = config('laravelGoogleCustomSearchEngine.engineId');
-        $this->apiKey = config('laravelGoogleCustomSearchEngine.apiKey');
+	    $this->engineId = $engineId;
+	    $this->apiKey = $apiKey;
     }
 
     /**

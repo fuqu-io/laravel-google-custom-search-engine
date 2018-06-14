@@ -31,8 +31,8 @@
         "illuminate/support": ">=5.0.0"
     },
     "autoload": {
-        "psr-0": {
-            "JanDrda\\LaravelGoogleCustomSearchEngine": "src/"
+        "psr-4": {
+            "JanDrda\\LaravelGoogleCustomSearchEngine\\": "src/"
         }
     },
     "config": {
@@ -42,7 +42,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "JanDrda\\LaravelGoogleCustomSearchEngine\\LaravelGoogleCustomSearchEngineProvider"
+                "JanDrda\\LaravelGoogleCustomSearchEngine\\ServiceProvider"
             ]
         }
     }
