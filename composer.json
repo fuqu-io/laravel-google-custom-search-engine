@@ -27,7 +27,7 @@
         "source": "https://github.com/jdrda/laravel-google-custom-searchengine/archive/master.zip"
     },
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=5.5.0",
         "illuminate/support": ">=5.0.0"
     },
     "autoload": {

@@ -12,7 +12,7 @@ class ServiceProvider extends BaseServiceProvider{
 	}
 
 	public function register(){
-		$this->app->bind('GoogleCustomSearchEngine', function (){
+		$this->app->bind(Engine::class, function (){
 
 			$google_cse_id  = config(SELF::SHORT_NAME . '.engineId');
 			$google_api_key = config(self::SHORT_NAME . '.apiKey');
