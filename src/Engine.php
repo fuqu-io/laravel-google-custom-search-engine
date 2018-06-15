@@ -141,7 +141,7 @@ class Engine{
 		/**
 		 * Convert JSON format to object and save
 		 */
-		$this->originalResponse = json_decode($output);
+		$this->originalResponse = json_decode($output, true);
 
 		/**
 		 * If there are some results, return them, otherwise return blank array
